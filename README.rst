@@ -1,15 +1,6 @@
-===============================
+=================================================
 Enhanced theme based on py3 documentation's theme
-===============================
-
-
-.. image:: http://img.shields.io/travis/ionelmc/sphinx-py3doc-enhanced-theme/master.png
-    :alt: Build Status
-    :target: https://travis-ci.org/ionelmc/sphinx-py3doc-enhanced-theme
-
-.. image:: http://img.shields.io/coveralls/ionelmc/sphinx-py3doc-enhanced-theme.png
-    :alt: Coverage Status
-    :target: https://coveralls.io/r/ionelmc/sphinx-py3doc-enhanced-theme
+=================================================
 
 .. image:: http://img.shields.io/pypi/v/sphinx_py3doc_enhanced_theme.png
     :alt: PYPI Package
@@ -34,11 +25,5 @@ Installation
 Documentation
 =============
 
-https://sphinx-py3doc-enhanced-theme.readthedocs.org/
+    TODO
 
-Development
-===========
-
-To run the all tests run::
-
-    tox
