@@ -12,9 +12,6 @@ Enhanced theme based on py3 documentation's theme
 
 A theme based on the theme of https://docs.python.org/3/
 
-* Free software: BSD license
-* Documentation: http://sphinx-py3doc-enhanced-theme.readthedocs.org.
-
 Installation
 ============
 
