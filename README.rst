@@ -22,7 +22,7 @@ Installation
 Add this in your documentation's ``conf.py``::
 
     import sphinx_py3doc_enhanced_theme
-    html_theme = " 	sphinx_py3doc_enhanced_theme"
+    html_theme = "sphinx_py3doc_enhanced_theme"
     html_theme_path = [sphinx_py3doc_enhanced_theme.get_html_theme_path()]
 
 Examples
