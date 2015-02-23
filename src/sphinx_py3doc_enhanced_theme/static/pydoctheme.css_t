@@ -136,9 +136,10 @@ tt, pre {
 div.body tt {
     border-radius: 3px;
 }
-
+div.body code.descname,
 div.body tt.descname {
     font-size: 120%;
+    font-weight: bold;
 }
 
 div.body tt.xref, div.body a tt {
@@ -287,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     color: #333;
 }
-tt {
+code, tt {
     background: none;
     text-shadow: 1px 1px 2px #ddd;
 }
@@ -385,17 +386,17 @@ div.badge a {
     height: 33px;
 }
 div.badge img {
-    box-shadow: none; 
-    margin: 0; 
-    border: 0; 
-    width: 149px; 
+    box-shadow: none;
+    margin: 0;
+    border: 0;
+    width: 149px;
     height: 149px;
 }
 .badge {
     overflow: hidden;
-    position: absolute; 
-    top: 0; 
-    right: 0; 
-    width: 149px; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 149px;
     height: 149px;
-}    
+}
