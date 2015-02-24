@@ -2,7 +2,12 @@
 Changelog
 =========
 
-1.0.1 (2015-02-24)
+1.2.0 (2015-02-24)
+------------------
+
+* Fat-fingered another version. Should had been 1.0.1 ... damn.
+
+1.1.0 (2015-02-24)
 ------------------
 
 * Match some markup changes in latest Sphinx.
