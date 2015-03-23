@@ -24,7 +24,7 @@ def read(*names, **kwargs):
 
 setup(
     name='sphinx-py3doc-enhanced-theme',
-    version='1.2.0',
+    version='2.0.0',
     license='BSD',
     description='A theme based on the theme of https://docs.python.org/3/ with some responsive enhancements.',
     long_description='%s\n%s' % (read('README.rst'), re.sub(':obj:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))),
