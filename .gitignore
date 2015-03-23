@@ -24,6 +24,8 @@ pip-log.txt
 # Unit test / coverage reports
 .coverage
 .tox
+.coverage
+.coverage.*
 nosetests.xml
 htmlcov
 
@@ -34,6 +36,7 @@ htmlcov
 .mr.developer.cfg
 .project
 .pydevproject
+.idea
 
 # Complexity
 output/*.html
@@ -45,9 +48,7 @@ docs/_build
 .DS_Store
 *~
 .*.sw[po]
-.build/
-.tox/
-.coverage
-.coverage.*
-.ve/
-.bootstrap/
+.build
+.ve
+.bootstrap
+*.bak

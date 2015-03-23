@@ -1,10 +1,7 @@
-exclude .travis* .cache*
-
-global-exclude *.py[co]
-
 graft docs
 graft examples
 graft src
+graft ci
 graft tests
 
 include *.komodoproject
@@ -19,5 +16,6 @@ include CONTRIBUTING.rst
 include LICENSE
 include README.rst
 
-include configure
-include tox*.ini
+include tox.ini .travis.yml appveyor.yml
+
+global-exclude *.py[co] __pycache__ *.so *.pyd
