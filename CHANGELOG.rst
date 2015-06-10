@@ -3,7 +3,7 @@ Changelog
 =========
 
 2.0.1 (2015-03-25)
------------------
+------------------
 
 * Fix inclusion of default.css (now classic.css).
 
