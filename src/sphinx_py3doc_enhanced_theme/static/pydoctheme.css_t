@@ -97,17 +97,19 @@ div.body div.seealso {
     border: 1px solid #dddd66;
 }
 
+    /* color: {{ theme_linkcolor }}; */
 div.body a {
-    color: #00608f;
+    color: {{ theme_linkcolor }};
 }
 
 div.body a:visited {
-    color: #30306f;
+    color: {{ theme_visitedlinkcolor }};
 }
 
 div.body a:hover {
     color: #00B0E4;
 }
+{% if theme_highlightcurrent %}
 div.body .section:target > h1,
 div.body .section:target > h2,
 div.body .section:target > h3,
@@ -126,7 +128,7 @@ div.body span:target + h5 {
     margin-left: -10px;
     text-shadow: 1px 1px 0px rgba(255,255,255,0.6);
 }
-
+{% endif %}
 
 tt, pre {
     font-family: monospace, sans-serif;
@@ -208,6 +210,7 @@ div.sphinxsidebar,
 pre, code, tt {
     font-family: {{ theme_codefont }} !important;
 }
+{% if theme_newstylecode %}
 pre {
     border: 1px solid #ddd !important;
     background-color: #fffdfd !important;
@@ -222,6 +225,7 @@ pre {
     word-wrap: break-word !important;
     /* Internet Explorer 5.5+ */
 }
+{% endif %}
 div.viewcode-block:target {
     background-color: #FFF4E6 !important;
 }
@@ -284,13 +288,17 @@ li > img {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    {% if theme_headshadow %}
     text-shadow: 1px 1px 2px #ddd;
+    {% endif %}
     font-weight: bold;
     color: #333;
 }
 code, tt {
     background: none;
+    {% if codeshadow %}
     text-shadow: 1px 1px 2px #ddd;
+    {% endif %}
     font-weight: bold;
 }
 div.sphinxsidebarwrapper > ul > li > ul > li {
