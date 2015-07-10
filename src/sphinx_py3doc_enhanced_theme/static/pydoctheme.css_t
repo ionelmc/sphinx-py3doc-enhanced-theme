@@ -14,7 +14,7 @@ div.related {
     border-bottom: 1px solid #ccc;
     margin-top: 0.5em;
     overflow: auto;
-	width: 100%
+    width: 100%
 }
 div.related:first-child {
     border-bottom: 0;
@@ -97,7 +97,6 @@ div.body div.seealso {
     border: 1px solid #dddd66;
 }
 
-    /* color: {{ theme_linkcolor }}; */
 div.body a {
     color: {{ theme_linkcolor }};
 }
