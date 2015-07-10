@@ -1,6 +1,14 @@
-
 Changelog
 =========
+
+2.1.0 (2015-07-11)
+------------------
+
+* Added new theme option ``extrastyling`` which can be used to get the
+  original Python 3 docs styling (green code blocks, gray inline code
+  blocks, no text shadows etc)
+* The ``py.png`` favicon is renamed to ``favicon.png``.
+* Added some examples for customizing the styling or using a custom favicon.
 
 2.0.2 (2015-07-08)
 ------------------
