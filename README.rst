@@ -55,8 +55,25 @@ Add this in your documentation's ``conf.py``:
 Customization
 =============
 
-Options
--------
+No extra styling
+----------------
+
+This theme has some extra styling like different fonts, text shadows for headings, slightly different styling for inline code and code blocks.
+
+To get the original styling Python 3 docs have add this in you ``conf.py``:
+
+.. sourcecode:: python
+
+    html_theme_options = {
+        'githuburl': 'https://github.com/ionelmc/sphinx-py3doc-enhanced-theme/',
+        'bodyfont': '"Lucida Grande",Arial,sans-serif',
+        'headfont': '"Lucida Grande",Arial,sans-serif',
+        'codefont': 'monospace,sans-serif',
+        'linkcolor': '#0072AA',
+        'visitedlinkcolor': '#6363bb',
+        'noextras': True,
+    }
+    pygments_style = 'friendly'
 
 Custom favicon
 --------------

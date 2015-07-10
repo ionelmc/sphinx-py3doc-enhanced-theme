@@ -108,7 +108,7 @@ div.body a:visited {
 div.body a:hover {
     color: #00B0E4;
 }
-{% if theme_highlightcurrent %}
+{% if not theme_noextras %}
 div.body .section:target > h1,
 div.body .section:target > h2,
 div.body .section:target > h3,
@@ -143,13 +143,10 @@ div.body tt.descname {
     font-weight: bold;
 }
 
-{% if not theme_codeclassname_bold %}
 div.body code.descclassname {
     font-weight: normal;
 }
-{% endif %}
 
-{% if not theme_headercode_bold %}
 h1 code,
 h2 code,
 h3 code,
@@ -157,7 +154,6 @@ h4 code,
 h5 code {
     font-weight: normal;
 }
-{% endif %}
 
 div.body tt.xref, div.body a tt {
     font-weight: normal;
@@ -225,7 +221,7 @@ div.sphinxsidebar,
 pre, code, tt {
     font-family: {{ theme_codefont }} !important;
 }
-{% if theme_newstylecode %}
+{% if not theme_noextras %}
 pre {
     border: 1px solid #ddd !important;
     background-color: #fffdfd !important;
@@ -303,7 +299,7 @@ li > img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    {% if theme_headshadow %}
+    {% if not theme_noextras %}
     text-shadow: 1px 1px 2px #ddd;
     {% endif %}
     font-weight: bold;
@@ -311,11 +307,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 code, tt {
     background: none;
-    {% if theme_codeshadow %}
+    {% if not theme_noextras %}
     text-shadow: 1px 1px 2px #ddd;
-    {% endif %}
     font-weight: bold;
+    {% endif %}
 }
+{% if theme_noextras %}
+p code.docutils.literal {
+    background-color: #ECF0F3;
+    padding: 0px 1px;
+}
+{% endif %}
+
 div.sphinxsidebarwrapper > ul > li > ul > li {
     margin: 0.4em 0 0 0;
 }
