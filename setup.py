@@ -27,8 +27,8 @@ setup(
     version='2.0.2',
     license='BSD',
     description='A theme based on the theme of https://docs.python.org/3/ with some responsive enhancements.',
-    long_description='%s\n%s' % (read('README.rst'), re.sub(':obj:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))),
-    author='Ionel Cristian M\xc4\x83rie\xc8\x99',
+    long_description='%s\n%s' % (read('README.rst'), re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))),
+    author='Ionel Cristian Mărieș',
     author_email='contact@ionelmc.ro',
     url='https://github.com/ionelmc/sphinx-py3doc-enhanced-theme',
     packages=find_packages('src'),
@@ -61,8 +61,8 @@ setup(
         # eg: 'aspectlib==1.1.1', 'six>=1.7',
     ],
     extras_require={
-        # eg: 'rst': ['docutils>=0.11'],
-    },
-    entry_points={
+        # eg:
+        #   'rst': ['docutils>=0.11'],
+        #   ':python_version=="2.6"': ['argparse'],
     },
 )

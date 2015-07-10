@@ -1,0 +1,29 @@
+# This file exists so you can easily regenerate your project.
+#
+# Unfortunatelly cookiecutter can't use this right away so
+# you have to copy this file to ~/.cookiecutterrc
+
+default_context:
+
+    c_extension_optional:      'no'
+    c_extension_support:       'no'
+    codecov:                   'no'
+    command_line_interface:    'no'
+    coveralls:                 'no'
+    distribution_name:         'sphinx-py3doc-enhanced-theme'
+    email:                     'contact@ionelmc.ro'
+    full_name:                 'Ionel Cristian Mărieș'
+    github_username:           'ionelmc'
+    landscape:                 'no'
+    package_name:              'sphinx_py3doc_enhanced_theme'
+    project_name:              'Enhanced Sphinx theme (based on Python 3 docs)'
+    project_short_description: 'A theme based on the theme of https://docs.python.org/3/ with some responsive enhancements.'
+    release_date:              '2015-07-08'
+    repo_name:                 'sphinx-py3doc-enhanced-theme'
+    scrutinizer:               'no'
+    sphinx_theme:              'sphinx-py3doc-enhanced-theme'
+    test_matrix_configurator:  'no'
+    test_runner:               'pytest'
+    version:                   '2.0.2'
+    website:                   'http://blog.ionelmc.ro'
+    year:                      '2014-2015'

@@ -17,8 +17,8 @@ When `reporting a bug <https://github.com/ionelmc/sphinx-py3doc-enhanced-theme/i
 Documentation improvements
 ==========================
 
-Enhanced theme based on py3 documentation's theme could always use more documentation, whether as part of the
-official Enhanced theme based on py3 documentation's theme docs, in docstrings, or even on the web in blog posts,
+Enhanced Sphinx theme (based on Python 3 docs) could always use more documentation, whether as part of the
+official Enhanced Sphinx theme (based on Python 3 docs) docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 Feature requests and feedback
