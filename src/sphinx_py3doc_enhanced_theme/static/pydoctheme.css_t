@@ -143,6 +143,22 @@ div.body tt.descname {
     font-weight: bold;
 }
 
+{% if not theme_codeclassname_bold %}
+div.body code.descclassname {
+    font-weight: normal;
+}
+{% endif %}
+
+{% if not theme_headercode_bold %}
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code {
+    font-weight: normal;
+}
+{% endif %}
+
 div.body tt.xref, div.body a tt {
     font-weight: normal;
 }
