@@ -1,5 +1,5 @@
 Welcome to Enhanced Sphinx theme (based on Python 3 docs)'s documentation!
-======================================
+==========================================================================
 
 Contents:
 
