@@ -25,8 +25,6 @@ Enhanced Sphinx theme (based on Python 3 docs)
     :alt: AppVeyor Build Status
     :target: https://ci.appveyor.com/project/ionelmc/sphinx-py3doc-enhanced-theme
 
-
-
 .. |version| image:: http://img.shields.io/pypi/v/sphinx-py3doc-enhanced-theme.svg?style=flat
     :alt: PyPI Package latest release
     :target: https://pypi.python.org/pypi/sphinx-py3doc-enhanced-theme
@@ -44,16 +42,53 @@ Installation
 
 ::
 
-    pip install sphinx-py3doc-enhanced-theme
+    pip install sphinx_py3doc_enhanced_theme
 
-Documentation
+Add this in your documentation's ``conf.py``:
+
+.. sourcecode:: python
+
+    import sphinx_py3doc_enhanced_theme
+    html_theme = "sphinx_py3doc_enhanced_theme"
+    html_theme_path = [sphinx_py3doc_enhanced_theme.get_html_theme_path()]
+
+Customization
 =============
 
-https://sphinx-py3doc-enhanced-theme.readthedocs.org/
+Options
+-------
 
-Development
-===========
+Custom favicon
+--------------
 
-To run the all tests run::
+To have a custom favicon create a ``theme`` directory near your ``conf.py`` and add this ``theme.conf`` in it:
 
-    tox
+.. sourcecode:: ini
+
+    [theme]
+    inherit = sphinx_py3doc_enhanced_theme
+
+Then create a ``favicon.png`` in the ``static`` directory.
+
+And then edit your ``conf.py`` to have something like this:
+
+.. sourcecode:: python
+
+    import sphinx_py3doc_enhanced_theme
+    html_theme = "theme"
+    html_theme_path = [sphinx_py3doc_enhanced_theme.get_html_theme_path(), "."]
+
+The final file structure should be like this::
+
+    docs
+    ├── conf.py
+    └── theme
+        ├── static
+        │   └── favicon.png
+        └── theme.conf
+
+Examples
+========
+
+* http://python-aspectlib.readthedocs.org/en/latest/
+* http://python-manhole.readthedocs.org/en/latest/
