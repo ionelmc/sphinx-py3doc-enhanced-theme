@@ -71,7 +71,7 @@ To get the original styling Python 3 docs have add this in you ``conf.py``:
         'codefont': 'monospace,sans-serif',
         'linkcolor': '#0072AA',
         'visitedlinkcolor': '#6363bb',
-        'noextras': True,
+        'extrastyling': False,
     }
     pygments_style = 'friendly'
 

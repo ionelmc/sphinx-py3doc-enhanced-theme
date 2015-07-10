@@ -108,13 +108,13 @@ div.body a:visited {
 div.body a:hover {
     color: #00B0E4;
 }
-{% if not theme_noextras %}
+{% if theme_extrastyling in [true, 'true', 'yes'] %}
 div.body .section:target > h1,
 div.body .section:target > h2,
 div.body .section:target > h3,
 div.body .section:target > h4,
 div.body .section:target > h5,
-
+dt:target, .highlight,
 div.body span:target + h1,
 div.body span:target + h2,
 div.body span:target + h3,
@@ -221,7 +221,7 @@ div.sphinxsidebar,
 pre, code, tt {
     font-family: {{ theme_codefont }} !important;
 }
-{% if not theme_noextras %}
+{% if theme_extrastyling in [true, 'true', 'yes'] %}
 pre {
     border: 1px solid #ddd !important;
     background-color: #fffdfd !important;
@@ -299,7 +299,7 @@ li > img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    {% if not theme_noextras %}
+    {% if theme_extrastyling in [true, 'true', 'yes'] %}
     text-shadow: 1px 1px 2px #ddd;
     {% endif %}
     font-weight: bold;
@@ -307,12 +307,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 code, tt {
     background: none;
-    {% if not theme_noextras %}
+    {% if theme_extrastyling in [true, 'true', 'yes'] %}
     text-shadow: 1px 1px 2px #ddd;
     font-weight: bold;
     {% endif %}
 }
-{% if theme_noextras %}
+{% if theme_extrastyling not in [true, 'true', 'yes'] %}
 p code.docutils.literal {
     background-color: #ECF0F3;
     padding: 0px 1px;
