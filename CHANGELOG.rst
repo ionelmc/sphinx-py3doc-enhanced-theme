@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2.1.1 (2015-07-11)
+------------------
+
+* Remove background from reference links when ``extrastyling`` is off.
+
 2.1.0 (2015-07-11)
 ------------------
 
