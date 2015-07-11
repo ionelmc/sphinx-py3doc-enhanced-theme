@@ -4,18 +4,6 @@ sudo: false
 env:
   global:
     LD_PRELOAD=/lib/x86_64-linux-gnu/libSegFault.so
-  matrix:
-    - TOXENV=check
-    - TOXENV=2.6
-    - TOXENV=2.6-nocover
-    - TOXENV=2.7
-    - TOXENV=2.7-nocover
-    - TOXENV=3.3
-    - TOXENV=3.3-nocover
-    - TOXENV=3.4
-    - TOXENV=3.4-nocover
-    - TOXENV=pypy
-    - TOXENV=pypy-nocover
 before_install:
   - openssl aes-256-cbc -K $encrypted_87d9ccdaebfd_key -iv $encrypted_87d9ccdaebfd_iv -in publish-key.enc -out ~/.ssh/publish-key -d
   - chmod u=rw,og= ~/.ssh/publish-key
