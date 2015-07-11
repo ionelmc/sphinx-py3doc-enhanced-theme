@@ -14,7 +14,7 @@
 /* -- page layout ----------------------------------------------------------- */
 
 body {
-    font-family: 'Palatino', 'Palatino Linotype', 'URW Palladio L', 'Century Schoolbook L', 'Georgia', serif;
+    font-family: "Lucida Grande",Arial,sans-serif;
     font-size: 100%;
     background-color: white;
     color: #000;
@@ -68,7 +68,7 @@ div.sphinxsidebar {
 }
 
 div.sphinxsidebar h3 {
-    font-family: 'Myriad Pro', 'Trebuchet Ms', 'Segoe UI', sans-serif;
+    font-family: "Lucida Grande",Arial,sans-serif;
     color: #444444;
     font-size: 1.4em;
     font-weight: normal;
@@ -81,7 +81,7 @@ div.sphinxsidebar h3 a {
 }
 
 div.sphinxsidebar h4 {
-    font-family: 'Myriad Pro', 'Trebuchet Ms', 'Segoe UI', sans-serif;
+    font-family: "Lucida Grande",Arial,sans-serif;
     color: #444444;
     font-size: 1.3em;
     font-weight: normal;
@@ -123,12 +123,12 @@ div#sidebarbutton {
 /* -- hyperlink styles ------------------------------------------------------ */
 
 a {
-    color: #00608f;
+    color: #0072AA;
     text-decoration: none;
 }
 
 a:visited {
-    color: #30306f;
+    color: #6363bb;
     text-decoration: none;
 }
 
@@ -146,7 +146,7 @@ div.body h3,
 div.body h4,
 div.body h5,
 div.body h6 {
-    font-family: 'Myriad Pro', 'Trebuchet Ms', 'Segoe UI', sans-serif;
+    font-family: "Lucida Grande",Arial,sans-serif;
     background-color: white;
     font-weight: normal;
     color: #1a1a1a;
@@ -251,7 +251,7 @@ th {
 }
 
 .viewcode-back {
-    font-family: 'Palatino', 'Palatino Linotype', 'URW Palladio L', 'Century Schoolbook L', 'Georgia', serif;
+    font-family: "Lucida Grande",Arial,sans-serif;
 }
 
 div.viewcode-block:target {
