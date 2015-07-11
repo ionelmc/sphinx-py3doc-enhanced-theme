@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>foobar — Boring lorem ipsum &mdash; Enhanced Sphinx theme (based on Python 3 docs) 2.1.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/pydoctheme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/sidebar.js"></script>
+    <link rel="top" title="Enhanced Sphinx theme (based on Python 3 docs) 2.1.1 documentation" href="../index.html" />
+    <link rel="up" title="Reference" href="index.html" />
+    <link rel="next" title="Contributing" href="../contributing.html" />
+    <link rel="prev" title="foo.bar — Boring lorem ipsum" href="foo.bar.html" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="shortcut icon" type="image/png" href="../_static/favicon.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=0.8">
+    
+
+  </head>
+  <body role="document">
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="responsive-menu"><a href="#sidebar-anchor" title="Navigation">&#9776;</a></li>
+        <li><a href="../index.html">Enhanced Sphinx theme (based on Python 3 docs)-2.1.1</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+    
+        <div class="badge">
+            <a href="https://github.com/ionelmc/sphinx-py3doc-enhanced-theme/">Fork me on GitHub</a>
+            <img src="../_static/right-red@2x.png">
+        </div>
+    
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-foobar">
+<span id="foobar-boring-lorem-ipsum"></span><h1><a class="reference internal" href="#module-foobar" title="foobar: Some other fake module to test rendering"><code class="xref py py-mod docutils literal"><span class="pre">foobar</span></code></a> &#8212; Boring lorem ipsum<a class="headerlink" href="#module-foobar" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-pycon"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">&#39; &#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="k">print</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fib</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+<span class="go">0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">&#39; &#39;</span><span class="p">)</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+    <span class="k">print</span><span class="p">()</span>
+
+<span class="n">fib</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="just-goofing-around-with-automodule">
+<h2>Just goofing around with <code class="docutils literal"><span class="pre">automodule</span></code> ...<a class="headerlink" href="#just-goofing-around-with-automodule" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre>.. automodule:: tempfile
+    :members:
+</pre></div>
+</div>
+<hr class="docutils" />
+<span class="target" id="module-tempfile"></span><p>Temporary files.</p>
+<p>This module provides generic, low- and high-level interfaces for
+creating temporary files and directories.  The interfaces listed
+as &#8220;safe&#8221; just below can be used without fear of race conditions.
+Those listed as &#8220;unsafe&#8221; cannot, and are provided for backward
+compatibility only.</p>
+<p>This module also provides some data items to the user:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>TMP_MAX  - maximum number of names that will be tried before</dt>
+<dd>giving up.</dd>
+<dt>tempdir  - If this is set to a string before the first use of</dt>
+<dd>any routine from this module, it will be considered as
+another candidate location to store temporary files.</dd>
+</dl>
+</div></blockquote>
+<dl class="function">
+<dt id="tempfile.NamedTemporaryFile">
+<code class="descclassname">tempfile.</code><code class="descname">NamedTemporaryFile</code><span class="sig-paren">(</span><em>mode='w+b'</em>, <em>buffering=-1</em>, <em>encoding=None</em>, <em>newline=None</em>, <em>suffix=''</em>, <em>prefix='tmp'</em>, <em>dir=None</em>, <em>delete=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#NamedTemporaryFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tempfile.NamedTemporaryFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create and return a temporary file.
+Arguments:
+&#8216;prefix&#8217;, &#8216;suffix&#8217;, &#8216;dir&#8217; &#8211; as for mkstemp.
+&#8216;mode&#8217; &#8211; the mode argument to io.open (default &#8220;w+b&#8221;).
+&#8216;buffering&#8217; &#8211; the buffer size argument to io.open (default -1).
+&#8216;encoding&#8217; &#8211; the encoding argument to io.open (default None)
+&#8216;newline&#8217; &#8211; the newline argument to io.open (default None)
+&#8216;delete&#8217; &#8211; whether the file is deleted on close (default True).
+The file is created as mkstemp() would do it.</p>
+<p>Returns an object with a file-like interface; the name of the file
+is accessible as file.name.  The file will be automatically deleted
+when it is closed unless the &#8216;delete&#8217; argument is set to False.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tempfile.TemporaryFile">
+<code class="descclassname">tempfile.</code><code class="descname">TemporaryFile</code><span class="sig-paren">(</span><em>mode='w+b'</em>, <em>buffering=-1</em>, <em>encoding=None</em>, <em>newline=None</em>, <em>suffix=''</em>, <em>prefix='tmp'</em>, <em>dir=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#TemporaryFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tempfile.TemporaryFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create and return a temporary file.
+Arguments:
+&#8216;prefix&#8217;, &#8216;suffix&#8217;, &#8216;dir&#8217; &#8211; as for mkstemp.
+&#8216;mode&#8217; &#8211; the mode argument to io.open (default &#8220;w+b&#8221;).
+&#8216;buffering&#8217; &#8211; the buffer size argument to io.open (default -1).
+&#8216;encoding&#8217; &#8211; the encoding argument to io.open (default None)
+&#8216;newline&#8217; &#8211; the newline argument to io.open (default None)
+The file is created as mkstemp() would do it.</p>
+<p>Returns an object with a file-like interface.  The file has no
+name, and will cease to exist when it is closed.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="tempfile.SpooledTemporaryFile">
+<em class="property">class </em><code class="descclassname">tempfile.</code><code class="descname">SpooledTemporaryFile</code><span class="sig-paren">(</span><em>max_size=0</em>, <em>mode='w+b'</em>, <em>buffering=-1</em>, <em>encoding=None</em>, <em>newline=None</em>, <em>suffix=''</em>, <em>prefix='tmp'</em>, <em>dir=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#SpooledTemporaryFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tempfile.SpooledTemporaryFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Temporary file wrapper, specialized to switch from BytesIO
+or StringIO to a real file when it exceeds a certain size or
+when a fileno is needed.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="tempfile.TemporaryDirectory">
+<em class="property">class </em><code class="descclassname">tempfile.</code><code class="descname">TemporaryDirectory</code><span class="sig-paren">(</span><em>suffix=''</em>, <em>prefix='tmp'</em>, <em>dir=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#TemporaryDirectory"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tempfile.TemporaryDirectory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create and return a temporary directory.  This has the same
+behavior as mkdtemp but can be used as a context manager.  For
+example:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>with TemporaryDirectory() as tmpdir:</dt>
+<dd>...</dd>
+</dl>
+</div></blockquote>
+<p>Upon exiting the context, the directory and everything contained
+in it are removed.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tempfile.mkstemp">
+<code class="descclassname">tempfile.</code><code class="descname">mkstemp</code><span class="sig-paren">(</span><em>suffix=''</em>, <em>prefix='tmp'</em>, <em>dir=None</em>, <em>text=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#mkstemp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tempfile.mkstemp" title="Permalink to this definition">¶</a></dt>
+<dd><p>User-callable function to create and return a unique temporary
+file.  The return value is a pair (fd, name) where fd is the
+file descriptor returned by os.open, and name is the filename.</p>
+<p>If &#8216;suffix&#8217; is specified, the file name will end with that suffix,
+otherwise there will be no suffix.</p>
+<p>If &#8216;prefix&#8217; is specified, the file name will begin with that prefix,
+otherwise a default prefix is used.</p>
+<p>If &#8216;dir&#8217; is specified, the file will be created in that directory,
+otherwise a default directory is used.</p>
+<p>If &#8216;text&#8217; is specified and true, the file is opened in text
+mode.  Else (the default) the file is opened in binary mode.  On
+some operating systems, this makes no difference.</p>
+<p>The file is readable and writable only by the creating user ID.
+If the operating system uses permission bits to indicate whether a
+file is executable, the file is executable by no one. The file
+descriptor is not inherited by children of this process.</p>
+<p>Caller is responsible for deleting the file when done with it.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tempfile.mkdtemp">
+<code class="descclassname">tempfile.</code><code class="descname">mkdtemp</code><span class="sig-paren">(</span><em>suffix=''</em>, <em>prefix='tmp'</em>, <em>dir=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#mkdtemp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tempfile.mkdtemp" title="Permalink to this definition">¶</a></dt>
+<dd><p>User-callable function to create and return a unique temporary
+directory.  The return value is the pathname of the directory.</p>
+<p>Arguments are as for mkstemp, except that the &#8216;text&#8217; argument is
+not accepted.</p>
+<p>The directory is readable, writable, and searchable only by the
+creating user.</p>
+<p>Caller is responsible for deleting the directory when done with it.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tempfile.mktemp">
+<code class="descclassname">tempfile.</code><code class="descname">mktemp</code><span class="sig-paren">(</span><em>suffix=''</em>, <em>prefix='tmp'</em>, <em>dir=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#mktemp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tempfile.mktemp" title="Permalink to this definition">¶</a></dt>
+<dd><p>User-callable function to return a unique temporary file name.  The
+file is not created.</p>
+<p>Arguments are as for mkstemp, except that the &#8216;text&#8217; argument is
+not accepted.</p>
+<p>This function is unsafe and should not be used.  The file name
+refers to a file that did not exist at some point, but by the time
+you get around to creating it, someone else may have beaten you to
+the punch.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tempfile.gettempprefix">
+<code class="descclassname">tempfile.</code><code class="descname">gettempprefix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#gettempprefix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tempfile.gettempprefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor for tempdir.template.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tempfile.gettempdir">
+<code class="descclassname">tempfile.</code><code class="descname">gettempdir</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#gettempdir"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tempfile.gettempdir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor for tempfile.tempdir.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <a id="sidebar-anchor"></a>
+    
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><h3><a href="../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="foo.bar.html"><code class="docutils literal"><span class="pre">foo.bar</span></code> &#8212; Boring lorem ipsum</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">foobar</span></code> &#8212; Boring lorem ipsum</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/reference/foobar.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../contributing.html" title="Contributing"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="foo.bar.html" title="foo.bar — Boring lorem ipsum"
+             accesskey="P">previous</a> |</li>
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2014-2015, Ionel Cristian Mărieș.
+      Last updated on Jul 11, 2015.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>
