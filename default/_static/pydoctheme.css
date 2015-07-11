@@ -98,15 +98,34 @@ div.body div.seealso {
 }
 
 div.body a {
-    color: #0072AA;
+    color: #00608f;
 }
 
 div.body a:visited {
-    color: #6363bb;
+    color: #30306f;
 }
 
 div.body a:hover {
     color: #00B0E4;
+}
+
+div.body .section:target > h1,
+div.body .section:target > h2,
+div.body .section:target > h3,
+div.body .section:target > h4,
+div.body .section:target > h5,
+dt:target, .highlight,
+div.body span:target + h1,
+div.body span:target + h2,
+div.body span:target + h3,
+div.body span:target + h4,
+div.body span:target + h5 {
+    color: #000;
+    background: #f1c40f;
+    border-radius: 4px;
+    padding-left: 10px;
+    margin-left: -10px;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.6);
 }
 
 
@@ -197,10 +216,25 @@ div.footer a:hover {
 
 div.sphinxsidebar,
 .related a {
-    font-family: "Lucida Grande",Arial,sans-serif !important;
+    font-family: 'Myriad Pro', 'Trebuchet Ms', 'Segoe UI', sans-serif !important;
 }
 pre, code, tt {
-    font-family: monospace,sans-serif !important;
+    font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', 'Courier New', monospace !important;
+}
+
+pre {
+    border: 1px solid #ddd !important;
+    background-color: #fffdfd !important;
+    white-space: pre-wrap !important;
+    /* css-3 */
+    white-space: -moz-pre-wrap !important;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap !important;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap !important;
+    /* Opera 7 */
+    word-wrap: break-word !important;
+    /* Internet Explorer 5.5+ */
 }
 
 div.viewcode-block:target {
@@ -266,21 +300,17 @@ li > img {
 
 h1, h2, h3, h4, h5, h6 {
     
+    text-shadow: 1px 1px 2px #ddd;
+    
     font-weight: bold;
     color: #333;
 }
 code, tt {
     background: none;
     
-}
-
-p code.docutils.literal {
-    background-color: #ECF0F3;
-    padding: 0px 1px;
-}
-p code.xref {
-    background: none !important;
-    padding: 0 !important;
+    text-shadow: 1px 1px 2px #ddd;
+    font-weight: bold;
+    
 }
 
 
