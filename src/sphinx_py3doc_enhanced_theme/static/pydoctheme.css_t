@@ -317,6 +317,10 @@ p code.docutils.literal {
     background-color: #ECF0F3;
     padding: 0px 1px;
 }
+p code.xref {
+    background: none !important;
+    padding: 0 !important;
+}
 {% endif %}
 
 div.sphinxsidebarwrapper > ul > li > ul > li {

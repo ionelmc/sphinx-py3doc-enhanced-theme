@@ -28,10 +28,15 @@ import sphinx_py3doc_enhanced_theme
 html_theme = "sphinx_py3doc_enhanced_theme"
 html_theme_path = [sphinx_py3doc_enhanced_theme.get_html_theme_path()]
 html_theme_options = {
-    'githuburl': 'https://github.com/ionelmc/sphinx-py3doc-enhanced-theme/'
+    'githuburl': 'https://github.com/ionelmc/sphinx-py3doc-enhanced-theme/',
+    'bodyfont': '"Lucida Grande",Arial,sans-serif',
+    'headfont': '"Lucida Grande",Arial,sans-serif',
+    'codefont': 'monospace,sans-serif',
+    'linkcolor': '#0072AA',
+    'visitedlinkcolor': '#6363bb',
+    'extrastyling': False,
 }
-
-pygments_style = 'trac'
+pygments_style = 'friendly'
 templates_path = ['.']
 html_use_smartypants = True
 html_last_updated_fmt = '%b %d, %Y'

@@ -1,6 +1,10 @@
 :mod:`foobar` --- Boring lorem ipsum
 =====================================
 
+.. module:: foobar
+    :synopsis: Some other fake module to test rendering
+
+
 .. sourcecode:: pycon
 
     >>> def fib(n):
