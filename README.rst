@@ -10,7 +10,7 @@ Enhanced Sphinx theme (based on Python 3 docs)
     * - tests
       - | |travis|
     * - demo
-      - `default <http://ionelmc.github.io/sphinx-py3doc-enhanced-theme/default/>`_
+      - `default <http://ionelmc.github.io/sphinx-py3doc-enhanced-theme/default/>`_,
         `bare <http://ionelmc.github.io/sphinx-py3doc-enhanced-theme/bare/>`_
     * - package
       - |version| |downloads|
