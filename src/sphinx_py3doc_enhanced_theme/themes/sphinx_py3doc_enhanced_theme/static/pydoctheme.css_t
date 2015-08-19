@@ -431,3 +431,8 @@ div.badge img {
     width: 149px;
     height: 149px;
 }
+
+{% if theme_appendcss %}
+/* appendcss: */
+{{ theme_appendcss }}
+{% endif %}
