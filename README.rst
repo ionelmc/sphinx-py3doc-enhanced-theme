@@ -102,6 +102,15 @@ The final file structure should be like this::
         │   └── favicon.png
         └── theme.conf
 
+A bit of extra css
+------------------
+
+.. sourcecode:: python
+
+    html_theme_options = {
+        'appendcss': 'div.body code.descclassname { display: none }',
+    }
+
 Examples
 ========
 

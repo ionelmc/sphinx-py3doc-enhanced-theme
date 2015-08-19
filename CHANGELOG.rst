@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.2.0 (2015-07-11)
+------------------
+
+* Added the ``appendcss`` theme options for quick customization.
+* Added the ``path`` setuptools entrypoint so ``html_theme_path`` doesn't need to be set anymore in ``conf.py``.
+
 2.1.1 (2015-07-11)
 ------------------
 
