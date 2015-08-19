@@ -54,6 +54,11 @@ setup(
         'Programming Language :: Python :: Implementation :: PyPy',
         'Topic :: Utilities',
     ],
+    entry_points = {
+        'sphinx_themes': [
+            'path = sphinx_py3doc_enhanced_theme:get_html_theme_path',
+        ]
+    },
     keywords=[
         # eg: 'keyword1', 'keyword2', 'keyword3',
     ],
