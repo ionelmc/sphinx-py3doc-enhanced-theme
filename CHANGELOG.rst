@@ -1,7 +1,13 @@
 Changelog
 =========
 
-2.2.0 (2015-07-11)
+2.2.1 (2015-08-21)
+------------------
+
+* Fixed positioning of navigation sidebar when displayed in narrow mode (at the bottom). Previously it overlapped the
+  footer.
+
+2.2.0 (2015-08-19)
 ------------------
 
 * Added the ``appendcss`` theme options for quick customization.

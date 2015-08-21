@@ -390,6 +390,9 @@ div.related ul {
     #sidebarbutton {
         display: none;
     }
+    div.sphinxsidebarwrapper {
+        position: inherit;
+    }
 }
 .odd-headings .row-odd td, .odd-headings .row-odd th {
     font-weight: bold;
