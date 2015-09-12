@@ -39,7 +39,9 @@ if os.environ['EXTRASTYLING'] == 'false':
         'visitedlinkcolor': '#6363bb',
         'extrastyling': False,
     })
-pygments_style = 'friendly'
+    pygments_style = 'friendly'
+else:
+    pygments_style = 'trac'
 templates_path = ['.']
 html_use_smartypants = True
 html_last_updated_fmt = '%b %d, %Y'

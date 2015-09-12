@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2.2.3 (2015-09-13)
+------------------
+
+* Fixed display of argument descriptions when there are multiple paragraphs. First paragraph shouldn't be on a second line.
+
 2.2.2 (2015-09-12)
 ------------------
 
