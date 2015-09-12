@@ -57,3 +57,26 @@ eget, placerat sit amet turpis. Nullam eget arcu vel ipsum finibus porttitor non
     Nulla volutpat dignissim maximus. Nunc at erat sem. Proin justo augue, porttitor a erat non, elementum dignissim sem.
     Vestibulum hendrerit aliquam scelerisque. Aenean bibendum nibh id neque interdum, nec cursus ligula dapibus. Ut in
     nulla sit amet sem pretium tristique non vel ante.
+
+.. py:function:: foo.bar(target, args=(), kwargs=None, setup=None)
+
+    :type  args: list or tuple
+    :param args:
+
+    :type  kwargs: dict
+    :param kwargs:
+
+    :type  setup: callable
+    :param setup: The setup function can also return the arguments for the function (in case you need to create new arguments every time).
+
+        .. sourcecode:: python
+
+            def test_with_setup(benchmark):
+                def setup():
+                    # can optionally return a (args, kwargs) tuple
+                    return (1, 2, 3), {'foo': 'bar'}
+                benchmark.pedantic(stuff, setup=setup, rounds=100)
+
+        .. note::
+
+            if you use a ``setup`` function then you cannot use the ``args``, ``kwargs`` and ``iterations`` options.

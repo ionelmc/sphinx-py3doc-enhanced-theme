@@ -362,6 +362,14 @@ div.related ul {
     /* seems there some nasty rules in pygments.css, that shouldn't set any background! */
     background: inherit !important;
 }
+/* correct argument descriptions for reference sections */
+.field-body li > p:first-of-type {
+    display: inline-block;
+}
+.field-body li > p {
+    margin: 1ex 0;
+}
+
 div.badge a {
     overflow: hidden;
     text-indent: -100px;

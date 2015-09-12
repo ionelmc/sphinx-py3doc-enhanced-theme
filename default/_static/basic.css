@@ -1,6 +1,12 @@
-/**
- * Sphinx stylesheet -- basic theme
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*
+ * basic.css
+ * ~~~~~~~~~
+ *
+ * Sphinx stylesheet -- basic theme.
+ *
+ * :copyright: Copyright 2007-2015 by the Sphinx team, see AUTHORS.
+ * :license: BSD, see LICENSE for details.
+ *
  */
 
 /* -- main layout ----------------------------------------------------------- */
@@ -38,10 +44,7 @@ div.related li.right {
 /* -- sidebar --------------------------------------------------------------- */
 
 div.sphinxsidebarwrapper {
-    position: relative;
-    top: 0;
     padding: 10px 5px 0 10px;
-    word-wrap: break-word;
 }
 
 div.sphinxsidebar {
@@ -76,8 +79,17 @@ div.sphinxsidebar input {
     font-size: 1em;
 }
 
+div.sphinxsidebar #searchbox input[type="text"] {
+    width: 170px;
+}
+
+div.sphinxsidebar #searchbox input[type="submit"] {
+    width: 30px;
+}
+
 img {
     border: 0;
+    max-width: 100%;
 }
 
 /* -- search page ----------------------------------------------------------- */
@@ -130,6 +142,10 @@ span.linkdescr {
 
 /* -- general index --------------------------------------------------------- */
 
+table.indextable {
+    width: 100%;
+}
+
 table.indextable td {
     text-align: left;
     vertical-align: top;
@@ -155,6 +171,20 @@ img.toggler {
     cursor: pointer;
 }
 
+div.modindex-jumpbox {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 1em 0 1em 0;
+    padding: 0.4em;
+}
+
+div.genindex-jumpbox {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 1em 0 1em 0;
+    padding: 0.4em;
+}
+
 /* -- general body styles --------------------------------------------------- */
 
 a.headerlink {
@@ -167,7 +197,10 @@ h3:hover > a.headerlink,
 h4:hover > a.headerlink,
 h5:hover > a.headerlink,
 h6:hover > a.headerlink,
-dt:hover > a.headerlink {
+dt:hover > a.headerlink,
+caption:hover > a.headerlink,
+p.caption:hover > a.headerlink,
+div.code-block-caption:hover > a.headerlink {
     visibility: visible;
 }
 
@@ -190,6 +223,36 @@ div.body td {
 p.rubric {
     margin-top: 30px;
     font-weight: bold;
+}
+
+img.align-left, .figure.align-left, object.align-left {
+    clear: left;
+    float: left;
+    margin-right: 1em;
+}
+
+img.align-right, .figure.align-right, object.align-right {
+    clear: right;
+    float: right;
+    margin-left: 1em;
+}
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
 }
 
 /* -- sidebars -------------------------------------------------------------- */
@@ -250,18 +313,23 @@ div.body p.centered {
 /* -- tables ---------------------------------------------------------------- */
 
 table.docutils {
-    border: 0 solid #dce;
+    border: 0;
     border-collapse: collapse;
 }
 
-table.docutils td, table.docutils th {
-    padding: 2px 5px 2px 5px;
-    border-left: 0;
-    background-color: #eef;
+table caption span.caption-number {
+    font-style: italic;
 }
 
-table.docutils td p.last, table.docutils th p.last {
-    margin-bottom: 0;
+table caption span.caption-text {
+}
+
+table.docutils td, table.docutils th {
+    padding: 1px 8px 1px 5px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #aaa;
 }
 
 table.field-list td, table.field-list th {
@@ -272,21 +340,60 @@ table.footnote td, table.footnote th {
     border: 0 !important;
 }
 
-table.docutils th {
-    border-top: 1px solid #cac;
-    background-color: #ede;
-}
-
 th {
     text-align: left;
     padding-right: 5px;
 }
 
-th.head {
-    text-align: center;
+table.citation {
+    border-left: solid 1px gray;
+    margin-left: 1px;
 }
 
+table.citation td {
+    border-bottom: none;
+}
+
+/* -- figures --------------------------------------------------------------- */
+
+div.figure {
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+div.figure p.caption {
+    padding: 0.3em;
+}
+
+div.figure p.caption span.caption-number {
+    font-style: italic;
+}
+
+div.figure p.caption span.caption-text {
+}
+
+
 /* -- other body styles ----------------------------------------------------- */
+
+ol.arabic {
+    list-style: decimal;
+}
+
+ol.loweralpha {
+    list-style: lower-alpha;
+}
+
+ol.upperalpha {
+    list-style: upper-alpha;
+}
+
+ol.lowerroman {
+    list-style: lower-roman;
+}
+
+ol.upperroman {
+    list-style: upper-roman;
+}
 
 dl {
     margin-bottom: 15px;
@@ -306,7 +413,7 @@ dd {
     margin-left: 30px;
 }
 
-dt:target, .highlight {
+dt:target, .highlighted {
     background-color: #fbe54e;
 }
 
@@ -324,26 +431,16 @@ dl.glossary dt {
     margin: 0;
 }
 
-.refcount {
-    color: #060;
-}
-
 .optional {
     font-size: 1.3em;
 }
 
+.sig-paren {
+    font-size: larger;
+}
+
 .versionmodified {
     font-style: italic;
-}
-
-.deprecated, .deprecated-removed {
-    background-color: #ffe4e4;
-    border: 1px solid #f66;
-    padding: 7px;
-}
-
-div.deprecated p, div.deprecated-removed p {
-    margin-bottom: 0;
 }
 
 .system-message {
@@ -356,26 +453,40 @@ div.deprecated p, div.deprecated-removed p {
     background-color: #ffa;
 }
 
-.impl-detail {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 7px;
-    border: 1px solid #ccc;
+.line-block {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
-.impl-detail .compound-first {
+.line-block .line-block {
     margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1.5em;
 }
 
-.impl-detail .compound-last {
-    margin-bottom: 0;
+.guilabel, .menuselection {
+    font-family: sans-serif;
+}
+
+.accelerator {
+    text-decoration: underline;
+}
+
+.classifier {
+    font-style: oblique;
+}
+
+abbr, acronym {
+    border-bottom: dotted 1px;
+    cursor: help;
 }
 
 /* -- code displays --------------------------------------------------------- */
 
 pre {
     overflow: auto;
-    overflow-y: hidden;
+    overflow-y: hidden;  /* fixes display issues on Chrome browsers */
 }
 
 td.linenos pre {
@@ -393,23 +504,66 @@ table.highlighttable td {
     padding: 0 0.5em 0 0.5em;
 }
 
-tt.descname {
+div.code-block-caption {
+    padding: 2px 5px;
+    font-size: small;
+}
+
+div.code-block-caption code {
+    background-color: transparent;
+}
+
+div.code-block-caption + div > div.highlight > pre {
+    margin-top: 0;
+}
+
+div.code-block-caption span.caption-number {
+    padding: 0.1em 0.3em;
+    font-style: italic;
+}
+
+div.code-block-caption span.caption-text {
+}
+
+div.literal-block-wrapper {
+    padding: 1em 1em 0;
+}
+
+div.literal-block-wrapper div.highlight {
+    margin: 0;
+}
+
+code.descname {
     background-color: transparent;
     font-weight: bold;
     font-size: 1.2em;
 }
 
-tt.descclassname {
+code.descclassname {
     background-color: transparent;
 }
 
-tt.xref, a tt {
+code.xref, a code {
     background-color: transparent;
     font-weight: bold;
 }
 
-h1 tt, h2 tt, h3 tt, h4 tt, h5 tt, h6 tt {
+h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
     background-color: transparent;
+}
+
+.viewcode-link {
+    float: right;
+}
+
+.viewcode-back {
+    float: right;
+    font-family: sans-serif;
+}
+
+div.viewcode-block:target {
+    margin: -1px -10px;
+    padding: 0 10px;
 }
 
 /* -- math display ---------------------------------------------------------- */
