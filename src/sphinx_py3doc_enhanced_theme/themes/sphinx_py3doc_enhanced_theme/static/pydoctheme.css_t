@@ -114,7 +114,7 @@ div.body .section:target > h2,
 div.body .section:target > h3,
 div.body .section:target > h4,
 div.body .section:target > h5,
-dt:target, .highlight,
+dt:target,
 div.body span:target + h1,
 div.body span:target + h2,
 div.body span:target + h3,
@@ -403,6 +403,10 @@ div.related ul {
     font-style: italic;
     color: #999;
     text-align: center;
+}
+.highlight  {
+    /* seems there some nasty rules in pygments.css, that shouldn't set any background! */
+    background: inherit !important;
 }
 div.badge a {
     overflow: hidden;

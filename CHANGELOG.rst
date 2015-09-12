@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2.2.2 (2015-09-12)
+------------------
+
+* Fixed issues with highlighting a section (via anchor location hash). Previously code blocks would get ugly bar on the left.
+
 2.2.1 (2015-08-21)
 ------------------
 
