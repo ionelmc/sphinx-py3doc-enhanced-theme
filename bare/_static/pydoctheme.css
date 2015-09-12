@@ -358,6 +358,10 @@ div.related ul {
     color: #999;
     text-align: center;
 }
+.highlight  {
+    /* seems there some nasty rules in pygments.css, that shouldn't set any background! */
+    background: inherit !important;
+}
 div.badge a {
     overflow: hidden;
     text-indent: -100px;
