@@ -38,6 +38,20 @@ eget, placerat sit amet turpis. Nullam eget arcu vel ipsum finibus porttitor non
         def foo():
             return bar
 
+    .. note:: Blublublub
+
+        Some more stuff here:
+
+        ::
+
+            foo
+                bar
+
+        .. sourcecode:: python
+
+            def foo():
+                return bar
+
 .. function:: lorem(ipsum)
 
     Nulla volutpat dignissim maximus. Nunc at erat sem. Proin justo augue, porttitor a erat non, elementum dignissim sem.
