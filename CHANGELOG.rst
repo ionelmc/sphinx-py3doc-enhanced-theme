@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.2.4 (2015-10-23)
+------------------
+
+* Removed awkward bottom padding of paragraphs in table cells.
+* Fix highlight of "p" anchors (that have id and got :target).
+
 2.2.3 (2015-09-13)
 ------------------
 

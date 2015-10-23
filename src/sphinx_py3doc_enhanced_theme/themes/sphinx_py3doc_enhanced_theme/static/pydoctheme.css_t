@@ -115,6 +115,7 @@ div.body .section:target > h3,
 div.body .section:target > h4,
 div.body .section:target > h5,
 dt:target,
+p:target,
 div.body span:target + h1,
 div.body span:target + h2,
 div.body span:target + h3,
@@ -126,6 +127,9 @@ div.body span:target + h5 {
     padding-left: 10px;
     margin-left: -10px;
     text-shadow: 1px 1px 0px rgba(255,255,255,0.6);
+}
+p:target {
+    margin-left: inherit;
 }
 {% endif %}
 
@@ -178,6 +182,9 @@ table.docutils td, table.docutils th {
 
 table p, table li {
     text-align: left !important;
+}
+table td p:last-child {
+    margin-bottom: 0;
 }
 
 table.docutils th {
