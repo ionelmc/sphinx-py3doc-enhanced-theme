@@ -160,6 +160,9 @@ table.docutils td, table.docutils th {
 table p, table li {
     text-align: left !important;
 }
+table td p:last-child {
+    margin-bottom: 0;
+}
 
 table.docutils th {
     background-color: #eee;
