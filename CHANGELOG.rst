@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.3.0 (2015-12-18)
+------------------
+
+* Removed use of ``!important`` from various places. Contributed by Matthias Geier in
+  `#10 <https://github.com/ionelmc/sphinx-py3doc-enhanced-theme/pull/10>`_.
+
 2.2.4 (2015-10-23)
 ------------------
 
