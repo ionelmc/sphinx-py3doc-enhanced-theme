@@ -176,12 +176,12 @@ table.docutils {
 }
 
 table.docutils td, table.docutils th {
-    border: 1px solid #ddd !important;
+    border: 1px solid #ddd;
     border-radius: 3px;
 }
 
 table p, table li {
-    text-align: left !important;
+    text-align: left;
 }
 table td p:last-child {
     margin-bottom: 0;
@@ -198,7 +198,7 @@ table.docutils td {
 }
 
 table.footnote, table.footnote td {
-    border: 0 !important;
+    border: 0;
 }
 
 div.footer {
@@ -223,29 +223,29 @@ div.footer a:hover {
 
 div.sphinxsidebar,
 .related a {
-    font-family: {{ theme_headfont }} !important;
+    font-family: {{ theme_headfont }};
 }
 pre, code, tt {
-    font-family: {{ theme_codefont }} !important;
+    font-family: {{ theme_codefont }};
 }
 {% if theme_extrastyling in [true, 'true', 'yes'] %}
-pre {
-    border: 1px solid #ddd !important;
-    background-color: #fffdfd !important;
-    white-space: pre-wrap !important;
+div.body pre {
+    border: 1px solid #ddd;
+    background-color: #fffdfd;
+    white-space: pre-wrap;
     /* css-3 */
-    white-space: -moz-pre-wrap !important;
+    white-space: -moz-pre-wrap;
     /* Mozilla, since 1999 */
-    white-space: -pre-wrap !important;
+    white-space: -pre-wrap;
     /* Opera 4-6 */
-    white-space: -o-pre-wrap !important;
+    white-space: -o-pre-wrap;
     /* Opera 7 */
-    word-wrap: break-word !important;
+    word-wrap: break-word;
     /* Internet Explorer 5.5+ */
 }
 {% endif %}
 div.viewcode-block:target {
-    background-color: #FFF4E6 !important;
+    background-color: #FFF4E6;
 }
 .toctree-l1 {
     font-size: 115%;
@@ -324,9 +324,9 @@ p code.docutils.literal {
     background-color: #ECF0F3;
     padding: 0px 1px;
 }
-p code.xref {
-    background: none !important;
-    padding: 0 !important;
+p code.docutils.xref {
+    background: none;
+    padding: 0;
 }
 {% endif %}
 
