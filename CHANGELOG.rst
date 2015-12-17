@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2.3.1 (2015-12-18)
+------------------
+
+* Fixed sidebar contents not moving while scrolling at all.
+
 2.3.0 (2015-12-18)
 ------------------
 
