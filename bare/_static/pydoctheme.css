@@ -29,8 +29,11 @@ div.sphinxsidebar {
     border-radius: 5px;
     line-height: 130%;
     font-size: smaller;
+    position: relative;
 }
-
+div.sphinxsidebarwrapper {
+    position: absolute;
+}
 div.sphinxsidebar h3, div.sphinxsidebar h4 {
     margin-top: 1.5em;
 }
