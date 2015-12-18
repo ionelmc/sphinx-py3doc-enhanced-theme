@@ -153,12 +153,12 @@ table.docutils {
 }
 
 table.docutils td, table.docutils th {
-    border: 1px solid #ddd !important;
+    border: 1px solid #ddd;
     border-radius: 3px;
 }
 
 table p, table li {
-    text-align: left !important;
+    text-align: left;
 }
 table td p:last-child {
     margin-bottom: 0;
@@ -175,7 +175,7 @@ table.docutils td {
 }
 
 table.footnote, table.footnote td {
-    border: 0 !important;
+    border: 0;
 }
 
 div.footer {
@@ -200,14 +200,14 @@ div.footer a:hover {
 
 div.sphinxsidebar,
 .related a {
-    font-family: "Lucida Grande",Arial,sans-serif !important;
+    font-family: "Lucida Grande",Arial,sans-serif;
 }
 pre, code, tt {
-    font-family: monospace,sans-serif !important;
+    font-family: monospace,sans-serif;
 }
 
 div.viewcode-block:target {
-    background-color: #FFF4E6 !important;
+    background-color: #FFF4E6;
 }
 .toctree-l1 {
     font-size: 115%;
@@ -281,9 +281,9 @@ p code.docutils.literal {
     background-color: #ECF0F3;
     padding: 0px 1px;
 }
-p code.xref {
-    background: none !important;
-    padding: 0 !important;
+p code.docutils.xref {
+    background: none;
+    padding: 0;
 }
 
 

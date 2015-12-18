@@ -273,8 +273,8 @@
 
 <div class="viewcode-block" id="gettempprefix"><a class="viewcode-back" href="../reference/foobar.html#tempfile.gettempprefix">[docs]</a><span class="k">def</span> <span class="nf">gettempprefix</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Accessor for tempdir.template.&quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">template</span>
-</div>
+    <span class="k">return</span> <span class="n">template</span></div>
+
 <span class="n">tempdir</span> <span class="o">=</span> <span class="bp">None</span>
 
 <div class="viewcode-block" id="gettempdir"><a class="viewcode-back" href="../reference/foobar.html#tempfile.gettempdir">[docs]</a><span class="k">def</span> <span class="nf">gettempdir</span><span class="p">():</span>
@@ -287,8 +287,8 @@
                 <span class="n">tempdir</span> <span class="o">=</span> <span class="n">_get_default_tempdir</span><span class="p">()</span>
         <span class="k">finally</span><span class="p">:</span>
             <span class="n">_once_lock</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">tempdir</span>
-</div>
+    <span class="k">return</span> <span class="n">tempdir</span></div>
+
 <div class="viewcode-block" id="mkstemp"><a class="viewcode-back" href="../reference/foobar.html#tempfile.mkstemp">[docs]</a><span class="k">def</span> <span class="nf">mkstemp</span><span class="p">(</span><span class="n">suffix</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="n">template</span><span class="p">,</span> <span class="nb">dir</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;User-callable function to create and return a unique temporary</span>
 <span class="sd">    file.  The return value is a pair (fd, name) where fd is the</span>
@@ -323,9 +323,9 @@
     <span class="k">else</span><span class="p">:</span>
         <span class="n">flags</span> <span class="o">=</span> <span class="n">_bin_openflags</span>
 
-    <span class="k">return</span> <span class="n">_mkstemp_inner</span><span class="p">(</span><span class="nb">dir</span><span class="p">,</span> <span class="n">prefix</span><span class="p">,</span> <span class="n">suffix</span><span class="p">,</span> <span class="n">flags</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">_mkstemp_inner</span><span class="p">(</span><span class="nb">dir</span><span class="p">,</span> <span class="n">prefix</span><span class="p">,</span> <span class="n">suffix</span><span class="p">,</span> <span class="n">flags</span><span class="p">)</span></div>
 
-</div>
+
 <div class="viewcode-block" id="mkdtemp"><a class="viewcode-back" href="../reference/foobar.html#tempfile.mkdtemp">[docs]</a><span class="k">def</span> <span class="nf">mkdtemp</span><span class="p">(</span><span class="n">suffix</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="n">template</span><span class="p">,</span> <span class="nb">dir</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;User-callable function to create and return a unique temporary</span>
 <span class="sd">    directory.  The return value is the pathname of the directory.</span>
@@ -354,8 +354,8 @@
             <span class="k">continue</span>    <span class="c"># try again</span>
 
     <span class="k">raise</span> <span class="n">FileExistsError</span><span class="p">(</span><span class="n">_errno</span><span class="o">.</span><span class="n">EEXIST</span><span class="p">,</span>
-                          <span class="s">&quot;No usable temporary directory name found&quot;</span><span class="p">)</span>
-</div>
+                          <span class="s">&quot;No usable temporary directory name found&quot;</span><span class="p">)</span></div>
+
 <div class="viewcode-block" id="mktemp"><a class="viewcode-back" href="../reference/foobar.html#tempfile.mktemp">[docs]</a><span class="k">def</span> <span class="nf">mktemp</span><span class="p">(</span><span class="n">suffix</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="n">template</span><span class="p">,</span> <span class="nb">dir</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;User-callable function to return a unique temporary file name.  The</span>
 <span class="sd">    file is not created.</span>
@@ -384,9 +384,9 @@
             <span class="k">return</span> <span class="nb">file</span>
 
     <span class="k">raise</span> <span class="n">FileExistsError</span><span class="p">(</span><span class="n">_errno</span><span class="o">.</span><span class="n">EEXIST</span><span class="p">,</span>
-                          <span class="s">&quot;No usable temporary filename found&quot;</span><span class="p">)</span>
+                          <span class="s">&quot;No usable temporary filename found&quot;</span><span class="p">)</span></div>
 
-</div>
+
 <span class="k">class</span> <span class="nc">_TemporaryFileCloser</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;A separate object allowing proper closing of a temporary file&#39;s</span>
 <span class="sd">    underlying file object, without adding a __del__ method to the</span>
@@ -521,8 +521,8 @@
         <span class="k">return</span> <span class="n">_TemporaryFileWrapper</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">delete</span><span class="p">)</span>
     <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
         <span class="n">_os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">fd</span><span class="p">)</span>
-        <span class="k">raise</span>
-</div>
+        <span class="k">raise</span></div>
+
 <span class="k">if</span> <span class="n">_os</span><span class="o">.</span><span class="n">name</span> <span class="o">!=</span> <span class="s">&#39;posix&#39;</span> <span class="ow">or</span> <span class="n">_os</span><span class="o">.</span><span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s">&#39;cygwin&#39;</span><span class="p">:</span>
     <span class="c"># On non-POSIX and Cygwin systems, assume that we cannot unlink a file</span>
     <span class="c"># while it is open.</span>
@@ -557,8 +557,8 @@
                             <span class="n">newline</span><span class="o">=</span><span class="n">newline</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">)</span>
         <span class="k">except</span><span class="p">:</span>
             <span class="n">_os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">fd</span><span class="p">)</span>
-            <span class="k">raise</span>
-</div>
+            <span class="k">raise</span></div>
+
 <div class="viewcode-block" id="SpooledTemporaryFile"><a class="viewcode-back" href="../reference/foobar.html#tempfile.SpooledTemporaryFile">[docs]</a><span class="k">class</span> <span class="nc">SpooledTemporaryFile</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;Temporary file wrapper, specialized to switch from BytesIO</span>
 <span class="sd">    or StringIO to a real file when it exceeds a certain size or</span>
@@ -704,9 +704,9 @@
         <span class="nb">file</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_file</span>
         <span class="n">rv</span> <span class="o">=</span> <span class="nb">file</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_check</span><span class="p">(</span><span class="nb">file</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">rv</span>
+        <span class="k">return</span> <span class="n">rv</span></div>
 
-</div>
+
 <div class="viewcode-block" id="TemporaryDirectory"><a class="viewcode-back" href="../reference/foobar.html#tempfile.TemporaryDirectory">[docs]</a><span class="k">class</span> <span class="nc">TemporaryDirectory</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Create and return a temporary directory.  This has the same</span>
 <span class="sd">    behavior as mkdtemp but can be used as a context manager.  For</span>
@@ -803,8 +803,8 @@
 
     <div class="footer" role="contentinfo">
         &copy; Copyright 2014-2015, Ionel Cristian Mărieș.
-      Last updated on Oct 23, 2015.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+      Last updated on Dec 18, 2015.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.
     </div>
   </body>
 </html>
