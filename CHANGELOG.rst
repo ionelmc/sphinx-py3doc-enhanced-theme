@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2.3.2 (2015-12-24)
+------------------
+
+* Fixed regression in sidebar size when there was no page content. Sidebar has its own height again.
+
 2.3.1 (2015-12-18)
 ------------------
 
