@@ -32,7 +32,7 @@ div.sphinxsidebar {
     position: relative;
 }
 div.sphinxsidebarwrapper {
-    position: absolute;
+    position: relative;
 }
 div.sphinxsidebar h3, div.sphinxsidebar h4 {
     margin-top: 1.5em;
