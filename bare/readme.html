@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Overview &mdash; Enhanced Sphinx theme (based on Python 3 docs) 2.3.2 documentation</title>
+    <title>Overview &#8212; Enhanced Sphinx theme (based on Python 3 docs) 2.3.2 documentation</title>
     
     <link rel="stylesheet" href="_static/pydoctheme.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -16,19 +16,22 @@
         VERSION:     '2.3.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/sidebar.js"></script>
-    <link rel="top" title="Enhanced Sphinx theme (based on Python 3 docs) 2.3.2 documentation" href="index.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Installation" href="installation.html" />
     <link rel="prev" title="Welcome to Enhanced Sphinx theme (based on Python 3 docs)’s documentation!" href="index.html" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <link rel="shortcut icon" type="image/png" href="_static/favicon.png" />
     <meta name="viewport" content="width=device-width,initial-scale=0.8">
+    
     
 
   </head>
@@ -37,7 +40,7 @@
       <h3>Navigation</h3>
       <ul>
         <li class="responsive-menu"><a href="#sidebar-anchor" title="Navigation">&#9776;</a></li>
-        <li><a href="index.html">Enhanced Sphinx theme (based on Python 3 docs)-2.3.2</a> &raquo;</li> 
+        <li><a href="index.html">Enhanced Sphinx theme (based on Python 3 docs)-2.3.2</a> &#187;</li> 
       </ul>
     </div>
     
@@ -87,12 +90,12 @@
 </ul>
 <div class="section" id="installation">
 <h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre>pip install sphinx_py3doc_enhanced_theme
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx_py3doc_enhanced_theme</span>
 </pre></div>
 </div>
 <p>Add this in your documentation&#8217;s <code class="docutils literal"><span class="pre">conf.py</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">sphinx_py3doc_enhanced_theme</span>
-<span class="n">html_theme</span> <span class="o">=</span> <span class="s">&quot;sphinx_py3doc_enhanced_theme&quot;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sphinx_py3doc_enhanced_theme</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s2">&quot;sphinx_py3doc_enhanced_theme&quot;</span>
 <span class="n">html_theme_path</span> <span class="o">=</span> <span class="p">[</span><span class="n">sphinx_py3doc_enhanced_theme</span><span class="o">.</span><span class="n">get_html_theme_path</span><span class="p">()]</span>
 </pre></div>
 </div>
@@ -103,35 +106,35 @@
 <h4>No extra styling<a class="headerlink" href="#no-extra-styling" title="Permalink to this headline">¶</a></h4>
 <p>This theme has some extra styling like different fonts, text shadows for headings, slightly different styling for inline code and code blocks.</p>
 <p>To get the original styling Python 3 docs have add this in you <code class="docutils literal"><span class="pre">conf.py</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s">&#39;githuburl&#39;</span><span class="p">:</span> <span class="s">&#39;https://github.com/ionelmc/sphinx-py3doc-enhanced-theme/&#39;</span><span class="p">,</span>
-    <span class="s">&#39;bodyfont&#39;</span><span class="p">:</span> <span class="s">&#39;&quot;Lucida Grande&quot;,Arial,sans-serif&#39;</span><span class="p">,</span>
-    <span class="s">&#39;headfont&#39;</span><span class="p">:</span> <span class="s">&#39;&quot;Lucida Grande&quot;,Arial,sans-serif&#39;</span><span class="p">,</span>
-    <span class="s">&#39;codefont&#39;</span><span class="p">:</span> <span class="s">&#39;monospace,sans-serif&#39;</span><span class="p">,</span>
-    <span class="s">&#39;linkcolor&#39;</span><span class="p">:</span> <span class="s">&#39;#0072AA&#39;</span><span class="p">,</span>
-    <span class="s">&#39;visitedlinkcolor&#39;</span><span class="p">:</span> <span class="s">&#39;#6363bb&#39;</span><span class="p">,</span>
-    <span class="s">&#39;extrastyling&#39;</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;githuburl&#39;</span><span class="p">:</span> <span class="s1">&#39;https://github.com/ionelmc/sphinx-py3doc-enhanced-theme/&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;bodyfont&#39;</span><span class="p">:</span> <span class="s1">&#39;&quot;Lucida Grande&quot;,Arial,sans-serif&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;headfont&#39;</span><span class="p">:</span> <span class="s1">&#39;&quot;Lucida Grande&quot;,Arial,sans-serif&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;codefont&#39;</span><span class="p">:</span> <span class="s1">&#39;monospace,sans-serif&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;linkcolor&#39;</span><span class="p">:</span> <span class="s1">&#39;#0072AA&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;visitedlinkcolor&#39;</span><span class="p">:</span> <span class="s1">&#39;#6363bb&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;extrastyling&#39;</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span>
 <span class="p">}</span>
-<span class="n">pygments_style</span> <span class="o">=</span> <span class="s">&#39;friendly&#39;</span>
+<span class="n">pygments_style</span> <span class="o">=</span> <span class="s1">&#39;friendly&#39;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="custom-favicon">
 <h4>Custom favicon<a class="headerlink" href="#custom-favicon" title="Permalink to this headline">¶</a></h4>
 <p>To have a custom favicon create a <code class="docutils literal"><span class="pre">theme</span></code> directory near your <code class="docutils literal"><span class="pre">conf.py</span></code> and add this <code class="docutils literal"><span class="pre">theme.conf</span></code> in it:</p>
-<div class="highlight-ini"><div class="highlight"><pre><span class="k">[theme]</span>
+<div class="highlight-ini"><div class="highlight"><pre><span></span><span class="k">[theme]</span>
 <span class="na">inherit</span> <span class="o">=</span> <span class="s">sphinx_py3doc_enhanced_theme</span>
 </pre></div>
 </div>
 <p>Then create a <code class="docutils literal"><span class="pre">favicon.png</span></code> in the <code class="docutils literal"><span class="pre">static</span></code> directory.</p>
 <p>And then edit your <code class="docutils literal"><span class="pre">conf.py</span></code> to have something like this:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">sphinx_py3doc_enhanced_theme</span>
-<span class="n">html_theme</span> <span class="o">=</span> <span class="s">&quot;theme&quot;</span>
-<span class="n">html_theme_path</span> <span class="o">=</span> <span class="p">[</span><span class="n">sphinx_py3doc_enhanced_theme</span><span class="o">.</span><span class="n">get_html_theme_path</span><span class="p">(),</span> <span class="s">&quot;.&quot;</span><span class="p">]</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sphinx_py3doc_enhanced_theme</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s2">&quot;theme&quot;</span>
+<span class="n">html_theme_path</span> <span class="o">=</span> <span class="p">[</span><span class="n">sphinx_py3doc_enhanced_theme</span><span class="o">.</span><span class="n">get_html_theme_path</span><span class="p">(),</span> <span class="s2">&quot;.&quot;</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>The final file structure should be like this:</p>
-<div class="highlight-python"><div class="highlight"><pre>docs
+<div class="highlight-default"><div class="highlight"><pre><span></span>docs
 ├── conf.py
 └── theme
     ├── static
@@ -142,8 +145,8 @@
 </div>
 <div class="section" id="a-bit-of-extra-css">
 <h4>A bit of extra css<a class="headerlink" href="#a-bit-of-extra-css" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s">&#39;appendcss&#39;</span><span class="p">:</span> <span class="s">&#39;div.body code.descclassname { display: none }&#39;</span><span class="p">,</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;appendcss&#39;</span><span class="p">:</span> <span class="s1">&#39;div.body code.descclassname { display: none }&#39;</span><span class="p">,</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -171,18 +174,15 @@
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script><h3><a href="index.html">Table Of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="">Overview</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#enhanced-sphinx-theme-based-on-python-3-docs">Enhanced Sphinx theme (based on Python 3 docs)</a></li>
 </ul>
 </li>
@@ -197,7 +197,7 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/readme.txt"
+      <li><a href="_sources/readme.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -224,9 +224,9 @@
     </div>
 
     <div class="footer" role="contentinfo">
-        &copy; Copyright 2014-2015, Ionel Cristian Mărieș.
-      Last updated on Dec 24, 2015.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.
+        &#169; Copyright 2014-2015, Ionel Cristian Mărieș.
+      Last updated on Dec 17, 2016.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.1.
     </div>
   </body>
 </html>
