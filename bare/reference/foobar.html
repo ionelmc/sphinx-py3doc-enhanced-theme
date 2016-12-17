@@ -88,10 +88,10 @@
 <hr class="docutils" />
 <span class="target" id="module-tempfile"></span><p>Temporary files.</p>
 <p>This module provides generic, low- and high-level interfaces for
-creating temporary files and directories.  All of the interfaces
-provided by this module can be used without fear of race conditions
-except for &#8216;mktemp&#8217;.  &#8216;mktemp&#8217; is subject to race conditions and
-should not be used; it is provided for backward compatibility only.</p>
+creating temporary files and directories.  The interfaces listed
+as &#8220;safe&#8221; just below can be used without fear of race conditions.
+Those listed as &#8220;unsafe&#8221; cannot, and are provided for backward
+compatibility only.</p>
 <p>This module also provides some data items to the user:</p>
 <blockquote>
 <div><dl class="docutils">
