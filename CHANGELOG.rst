@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.4.0 (2016-12-17)
+------------------
+
+* Added option to use Google Web Fonts. Contributed by Marius P Isken in 
+  `#11 <https://github.com/ionelmc/sphinx-py3doc-enhanced-theme/pull/11>`_.
+
 2.3.2 (2015-12-24)
 ------------------
 
