@@ -1,6 +1,8 @@
-==============================================
-Enhanced Sphinx theme (based on Python 3 docs)
-==============================================
+========
+Overview
+========
+
+.. start-badges
 
 .. list-table::
     :stub-columns: 1
@@ -8,32 +10,50 @@ Enhanced Sphinx theme (based on Python 3 docs)
     * - docs
       - |docs|
     * - tests
-      - | |travis|
-    * - demo
-      - `default <http://ionelmc.github.io/sphinx-py3doc-enhanced-theme/default/>`_,
-        `bare <http://ionelmc.github.io/sphinx-py3doc-enhanced-theme/bare/>`_
+      - | |travis| |requires|
+        |
     * - package
-      - |version| |downloads|
-
+      - | |version| |wheel| |supported-versions| |supported-implementations|
+        | |commits-since|
 .. |docs| image:: https://readthedocs.org/projects/sphinx-py3doc-enhanced-theme/badge/?style=flat
-    :target: https://readthedocs.org/projects/sphinx-py3doc-enhanced-theme
+    :target: https://sphinx-py3doc-enhanced-theme.readthedocs.io/
     :alt: Documentation Status
 
-.. |travis| image:: http://img.shields.io/travis/ionelmc/sphinx-py3doc-enhanced-theme/master.svg?style=flat&label=Travis
+.. |travis| image:: https://api.travis-ci.com/ionelmc/sphinx-py3doc-enhanced-theme.svg?branch=master
     :alt: Travis-CI Build Status
-    :target: https://travis-ci.org/ionelmc/sphinx-py3doc-enhanced-theme
+    :target: https://travis-ci.com/github/ionelmc/sphinx-py3doc-enhanced-theme
 
-.. |version| image:: http://img.shields.io/pypi/v/sphinx-py3doc-enhanced-theme.svg?style=flat
+.. |requires| image:: https://requires.io/github/ionelmc/sphinx-py3doc-enhanced-theme/requirements.svg?branch=master
+    :alt: Requirements Status
+    :target: https://requires.io/github/ionelmc/sphinx-py3doc-enhanced-theme/requirements/?branch=master
+
+.. |version| image:: https://img.shields.io/pypi/v/sphinx-py3doc-enhanced-theme.svg
     :alt: PyPI Package latest release
-    :target: https://pypi.python.org/pypi/sphinx-py3doc-enhanced-theme
+    :target: https://pypi.org/project/sphinx-py3doc-enhanced-theme
 
-.. |downloads| image:: http://img.shields.io/pypi/dm/sphinx-py3doc-enhanced-theme.svg?style=flat
-    :alt: PyPI Package monthly downloads
-    :target: https://pypi.python.org/pypi/sphinx-py3doc-enhanced-theme
+.. |wheel| image:: https://img.shields.io/pypi/wheel/sphinx-py3doc-enhanced-theme.svg
+    :alt: PyPI Wheel
+    :target: https://pypi.org/project/sphinx-py3doc-enhanced-theme
+
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/sphinx-py3doc-enhanced-theme.svg
+    :alt: Supported versions
+    :target: https://pypi.org/project/sphinx-py3doc-enhanced-theme
+
+.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/sphinx-py3doc-enhanced-theme.svg
+    :alt: Supported implementations
+    :target: https://pypi.org/project/sphinx-py3doc-enhanced-theme
+
+.. |commits-since| image:: https://img.shields.io/github/commits-since/ionelmc/sphinx-py3doc-enhanced-theme/v2.4.0.svg
+    :alt: Commits since latest release
+    :target: https://github.com/ionelmc/sphinx-py3doc-enhanced-theme/compare/v2.4.0...master
+
+
+
+.. end-badges
 
 A theme based on the theme of https://docs.python.org/3/ with some responsive enhancements.
 
-* Free software: BSD license
+* Free software: BSD 2-Clause License
 
 Installation
 ============

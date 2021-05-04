@@ -1,9 +1,13 @@
 language: python
-python: 3.4
-sudo: false
+python: 3.9
+dist: xenial
+virt: lxd
+cache: false
 env:
   global:
-    LD_PRELOAD=/lib/x86_64-linux-gnu/libSegFault.so
+    - LD_PRELOAD=/lib/x86_64-linux-gnu/libSegFault.so
+    - SEGFAULT_SIGNALS=all
+    - LANG=en_US.UTF-8
 before_install:
   - openssl aes-256-cbc -K $encrypted_87d9ccdaebfd_key -iv $encrypted_87d9ccdaebfd_iv -in publish-key.enc -out ~/.ssh/publish-key -d
   - chmod u=rw,og= ~/.ssh/publish-key
@@ -13,16 +17,19 @@ before_install:
   - git remote set-url origin git@github.com:ionelmc/sphinx-py3doc-enhanced-theme.git
   - git fetch origin -f gh-pages:gh-pages
   - python --version
+  - uname -a
+  - lsb_release -a || true
+install:
+  - python -mpip install --progress-bar=off tox -rci/requirements.txt
   - virtualenv --version
   - pip --version
-  - uname -a
-  - lsb_release -a
-install:
-  - pip install tox
+  - tox --version
 script:
   - tox -v
+after_failure:
+  - cat .tox/log/*
+  - cat .tox/*/log/*
 notifications:
   email:
     on_success: never
     on_failure: always
-
