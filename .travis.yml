@@ -9,7 +9,7 @@ env:
     - SEGFAULT_SIGNALS=all
     - LANG=en_US.UTF-8
 before_install:
-  - openssl aes-256-cbc -K $encrypted_120135e51708_key -iv $encrypted_120135e51708_iv    -in publish-key.enc -out publish-key -d
+  - openssl aes-256-cbc -K $encrypted_120135e51708_key -iv $encrypted_120135e51708_iv -in publish-key.enc -out ~/.ssh/publish-key -d
   - chmod u=rw,og= ~/.ssh/publish-key
   - echo "Host github.com" >> ~/.ssh/config
   - echo "  IdentityFile ~/.ssh/publish-key" >> ~/.ssh/config
