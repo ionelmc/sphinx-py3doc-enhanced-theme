@@ -12,6 +12,9 @@ Overview
     * - tests
       - | |travis| |requires|
         |
+    * - demo
+      - `default <http://ionelmc.github.io/sphinx-py3doc-enhanced-theme/default/>`_,
+        `bare <http://ionelmc.github.io/sphinx-py3doc-enhanced-theme/bare/>`_
     * - package
       - | |version| |wheel| |supported-versions| |supported-implementations|
         | |commits-since|
