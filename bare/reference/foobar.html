@@ -1,29 +1,20 @@
 <!DOCTYPE html>
 
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>foobar — Boring lorem ipsum &#8212; Enhanced Sphinx theme (based on Python 3 docs) 2.4.0 documentation</title>
-    
-    <link rel="stylesheet" href="../_static/pydoctheme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pydoctheme.css" type="text/css" />
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '2.4.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/sidebar.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <script src="../_static/sidebar.js"></script>
+    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Contributing" href="../contributing.html" />
@@ -34,8 +25,7 @@
     
     
 
-  </head>
-  <body role="document">
+  </head><body>
     <div class="related">
       <h3>Navigation</h3>
       <ul>
@@ -58,121 +48,169 @@
           <div class="body" role="main">
             
   <div class="section" id="module-foobar">
-<span id="foobar-boring-lorem-ipsum"></span><h1><a class="reference internal" href="#module-foobar" title="foobar: Some other fake module to test rendering"><code class="xref py py-mod docutils literal"><span class="pre">foobar</span></code></a> &#8212; Boring lorem ipsum<a class="headerlink" href="#module-foobar" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-pycon"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span id="foobar-boring-lorem-ipsum"></span><h1><a class="reference internal" href="#module-foobar" title="foobar: Some other fake module to test rendering"><code class="xref py py-mod docutils literal notranslate"><span class="pre">foobar</span></code></a> — Boring lorem ipsum<a class="headerlink" href="#module-foobar" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
-<span class="gp">&gt;&gt;&gt; </span>        <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span>        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
-<span class="gp">&gt;&gt;&gt; </span>    <span class="k">print</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="nb">print</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">fib</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
 <span class="go">0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987</span>
 </pre></div>
 </div>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
     <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
         <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
-    <span class="k">print</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">()</span>
 
 <span class="n">fib</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="section" id="just-goofing-around-with-automodule">
-<h2>Just goofing around with <code class="docutils literal"><span class="pre">automodule</span></code> ...<a class="headerlink" href="#just-goofing-around-with-automodule" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">automodule</span><span class="p">::</span> <span class="n">tempfile</span>
+<h2>Just goofing around with <code class="docutils literal notranslate"><span class="pre">automodule</span></code> …<a class="headerlink" href="#just-goofing-around-with-automodule" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">automodule</span><span class="p">::</span> <span class="n">tempfile</span>
     <span class="p">:</span><span class="n">members</span><span class="p">:</span>
 </pre></div>
 </div>
 <hr class="docutils" />
 <span class="target" id="module-tempfile"></span><p>Temporary files.</p>
 <p>This module provides generic, low- and high-level interfaces for
-creating temporary files and directories.  The interfaces listed
-as &#8220;safe&#8221; just below can be used without fear of race conditions.
-Those listed as &#8220;unsafe&#8221; cannot, and are provided for backward
-compatibility only.</p>
+creating temporary files and directories.  All of the interfaces
+provided by this module can be used without fear of race conditions
+except for ‘mktemp’.  ‘mktemp’ is subject to race conditions and
+should not be used; it is provided for backward compatibility only.</p>
+<p>The default path names are returned as str.  If you supply bytes as
+input, all return values will be in bytes.  Ex:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tempfile</span><span class="o">.</span><span class="n">mkstemp</span><span class="p">()</span>
+<span class="go">(4, &#39;/tmp/tmptpu9nin8&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tempfile</span><span class="o">.</span><span class="n">mkdtemp</span><span class="p">(</span><span class="n">suffix</span><span class="o">=</span><span class="sa">b</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="go">b&#39;/tmp/tmppbi8f0hy&#39;</span>
+</pre></div>
+</div>
 <p>This module also provides some data items to the user:</p>
 <blockquote>
-<div><dl class="docutils">
-<dt>TMP_MAX  - maximum number of names that will be tried before</dt>
-<dd>giving up.</dd>
-<dt>tempdir  - If this is set to a string before the first use of</dt>
-<dd>any routine from this module, it will be considered as
-another candidate location to store temporary files.</dd>
+<div><dl class="simple">
+<dt>TMP_MAX  - maximum number of names that will be tried before</dt><dd><p>giving up.</p>
+</dd>
+<dt>tempdir  - If this is set to a string before the first use of</dt><dd><p>any routine from this module, it will be considered as
+another candidate location to store temporary files.</p>
+</dd>
 </dl>
 </div></blockquote>
-<dl class="function">
+<dl class="py function">
 <dt id="tempfile.NamedTemporaryFile">
-<code class="descclassname">tempfile.</code><code class="descname">NamedTemporaryFile</code><span class="sig-paren">(</span><em>mode='w+b'</em>, <em>buffering=-1</em>, <em>encoding=None</em>, <em>newline=None</em>, <em>suffix=''</em>, <em>prefix='tmp'</em>, <em>dir=None</em>, <em>delete=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#NamedTemporaryFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tempfile.NamedTemporaryFile" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">tempfile.</span></code><code class="sig-name descname"><span class="pre">NamedTemporaryFile</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'w+b'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">buffering</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">newline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delete</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">errors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#NamedTemporaryFile"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tempfile.NamedTemporaryFile" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create and return a temporary file.
 Arguments:
-&#8216;prefix&#8217;, &#8216;suffix&#8217;, &#8216;dir&#8217; &#8211; as for mkstemp.
-&#8216;mode&#8217; &#8211; the mode argument to io.open (default &#8220;w+b&#8221;).
-&#8216;buffering&#8217; &#8211; the buffer size argument to io.open (default -1).
-&#8216;encoding&#8217; &#8211; the encoding argument to io.open (default None)
-&#8216;newline&#8217; &#8211; the newline argument to io.open (default None)
-&#8216;delete&#8217; &#8211; whether the file is deleted on close (default True).
+‘prefix’, ‘suffix’, ‘dir’ – as for mkstemp.
+‘mode’ – the mode argument to io.open (default “w+b”).
+‘buffering’ – the buffer size argument to io.open (default -1).
+‘encoding’ – the encoding argument to io.open (default None)
+‘newline’ – the newline argument to io.open (default None)
+‘delete’ – whether the file is deleted on close (default True).
+‘errors’ – the errors argument to io.open (default None)
 The file is created as mkstemp() would do it.</p>
 <p>Returns an object with a file-like interface; the name of the file
-is accessible as file.name.  The file will be automatically deleted
-when it is closed unless the &#8216;delete&#8217; argument is set to False.</p>
+is accessible as its ‘name’ attribute.  The file will be automatically
+deleted when it is closed unless the ‘delete’ argument is set to False.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="tempfile.TemporaryFile">
-<code class="descclassname">tempfile.</code><code class="descname">TemporaryFile</code><span class="sig-paren">(</span><em>mode='w+b'</em>, <em>buffering=-1</em>, <em>encoding=None</em>, <em>newline=None</em>, <em>suffix=''</em>, <em>prefix='tmp'</em>, <em>dir=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#TemporaryFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tempfile.TemporaryFile" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create and return a temporary file.
-Arguments:
-&#8216;prefix&#8217;, &#8216;suffix&#8217;, &#8216;dir&#8217; &#8211; as for mkstemp.
-&#8216;mode&#8217; &#8211; the mode argument to io.open (default &#8220;w+b&#8221;).
-&#8216;buffering&#8217; &#8211; the buffer size argument to io.open (default -1).
-&#8216;encoding&#8217; &#8211; the encoding argument to io.open (default None)
-&#8216;newline&#8217; &#8211; the newline argument to io.open (default None)
-The file is created as mkstemp() would do it.</p>
-<p>Returns an object with a file-like interface.  The file has no
-name, and will cease to exist when it is closed.</p>
-</dd></dl>
-
-<dl class="class">
+<dl class="py class">
 <dt id="tempfile.SpooledTemporaryFile">
-<em class="property">class </em><code class="descclassname">tempfile.</code><code class="descname">SpooledTemporaryFile</code><span class="sig-paren">(</span><em>max_size=0</em>, <em>mode='w+b'</em>, <em>buffering=-1</em>, <em>encoding=None</em>, <em>newline=None</em>, <em>suffix=''</em>, <em>prefix='tmp'</em>, <em>dir=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#SpooledTemporaryFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tempfile.SpooledTemporaryFile" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">tempfile.</span></code><code class="sig-name descname"><span class="pre">SpooledTemporaryFile</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'w+b'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">buffering</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">newline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">errors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#SpooledTemporaryFile"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tempfile.SpooledTemporaryFile" title="Permalink to this definition">¶</a></dt>
 <dd><p>Temporary file wrapper, specialized to switch from BytesIO
 or StringIO to a real file when it exceeds a certain size or
 when a fileno is needed.</p>
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="tempfile.TemporaryDirectory">
-<em class="property">class </em><code class="descclassname">tempfile.</code><code class="descname">TemporaryDirectory</code><span class="sig-paren">(</span><em>suffix=''</em>, <em>prefix='tmp'</em>, <em>dir=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#TemporaryDirectory"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tempfile.TemporaryDirectory" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">tempfile.</span></code><code class="sig-name descname"><span class="pre">TemporaryDirectory</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#TemporaryDirectory"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tempfile.TemporaryDirectory" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create and return a temporary directory.  This has the same
 behavior as mkdtemp but can be used as a context manager.  For
 example:</p>
 <blockquote>
-<div><dl class="docutils">
-<dt>with TemporaryDirectory() as tmpdir:</dt>
-<dd>...</dd>
+<div><dl class="simple">
+<dt>with TemporaryDirectory() as tmpdir:</dt><dd><p>…</p>
+</dd>
 </dl>
 </div></blockquote>
 <p>Upon exiting the context, the directory and everything contained
 in it are removed.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
+<dt id="tempfile.TemporaryFile">
+<code class="sig-prename descclassname"><span class="pre">tempfile.</span></code><code class="sig-name descname"><span class="pre">TemporaryFile</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'w+b'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">buffering</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">newline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">errors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#TemporaryFile"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tempfile.TemporaryFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create and return a temporary file.
+Arguments:
+‘prefix’, ‘suffix’, ‘dir’ – as for mkstemp.
+‘mode’ – the mode argument to io.open (default “w+b”).
+‘buffering’ – the buffer size argument to io.open (default -1).
+‘encoding’ – the encoding argument to io.open (default None)
+‘newline’ – the newline argument to io.open (default None)
+‘errors’ – the errors argument to io.open (default None)
+The file is created as mkstemp() would do it.</p>
+<p>Returns an object with a file-like interface.  The file has no
+name, and will cease to exist when it is closed.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tempfile.gettempdir">
+<code class="sig-prename descclassname"><span class="pre">tempfile.</span></code><code class="sig-name descname"><span class="pre">gettempdir</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#gettempdir"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tempfile.gettempdir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor for tempfile.tempdir.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tempfile.gettempdirb">
+<code class="sig-prename descclassname"><span class="pre">tempfile.</span></code><code class="sig-name descname"><span class="pre">gettempdirb</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#gettempdirb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tempfile.gettempdirb" title="Permalink to this definition">¶</a></dt>
+<dd><p>A bytes version of tempfile.gettempdir().</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tempfile.gettempprefix">
+<code class="sig-prename descclassname"><span class="pre">tempfile.</span></code><code class="sig-name descname"><span class="pre">gettempprefix</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#gettempprefix"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tempfile.gettempprefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>The default prefix for temporary directories.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tempfile.gettempprefixb">
+<code class="sig-prename descclassname"><span class="pre">tempfile.</span></code><code class="sig-name descname"><span class="pre">gettempprefixb</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#gettempprefixb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tempfile.gettempprefixb" title="Permalink to this definition">¶</a></dt>
+<dd><p>The default prefix for temporary directories as bytes.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tempfile.mkdtemp">
+<code class="sig-prename descclassname"><span class="pre">tempfile.</span></code><code class="sig-name descname"><span class="pre">mkdtemp</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#mkdtemp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tempfile.mkdtemp" title="Permalink to this definition">¶</a></dt>
+<dd><p>User-callable function to create and return a unique temporary
+directory.  The return value is the pathname of the directory.</p>
+<p>Arguments are as for mkstemp, except that the ‘text’ argument is
+not accepted.</p>
+<p>The directory is readable, writable, and searchable only by the
+creating user.</p>
+<p>Caller is responsible for deleting the directory when done with it.</p>
+</dd></dl>
+
+<dl class="py function">
 <dt id="tempfile.mkstemp">
-<code class="descclassname">tempfile.</code><code class="descname">mkstemp</code><span class="sig-paren">(</span><em>suffix=''</em>, <em>prefix='tmp'</em>, <em>dir=None</em>, <em>text=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#mkstemp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tempfile.mkstemp" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">tempfile.</span></code><code class="sig-name descname"><span class="pre">mkstemp</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#mkstemp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tempfile.mkstemp" title="Permalink to this definition">¶</a></dt>
 <dd><p>User-callable function to create and return a unique temporary
 file.  The return value is a pair (fd, name) where fd is the
 file descriptor returned by os.open, and name is the filename.</p>
-<p>If &#8216;suffix&#8217; is specified, the file name will end with that suffix,
+<p>If ‘suffix’ is not None, the file name will end with that suffix,
 otherwise there will be no suffix.</p>
-<p>If &#8216;prefix&#8217; is specified, the file name will begin with that prefix,
+<p>If ‘prefix’ is not None, the file name will begin with that prefix,
 otherwise a default prefix is used.</p>
-<p>If &#8216;dir&#8217; is specified, the file will be created in that directory,
+<p>If ‘dir’ is not None, the file will be created in that directory,
 otherwise a default directory is used.</p>
-<p>If &#8216;text&#8217; is specified and true, the file is opened in text
-mode.  Else (the default) the file is opened in binary mode.  On
-some operating systems, this makes no difference.</p>
+<p>If ‘text’ is specified and true, the file is opened in text
+mode.  Else (the default) the file is opened in binary mode.</p>
+<p>If any of ‘suffix’, ‘prefix’ and ‘dir’ are not None, they must be the
+same type.  If they are bytes, the returned name will be bytes; str
+otherwise.</p>
 <p>The file is readable and writable only by the creating user ID.
 If the operating system uses permission bits to indicate whether a
 file is executable, the file is executable by no one. The file
@@ -180,47 +218,25 @@ descriptor is not inherited by children of this process.</p>
 <p>Caller is responsible for deleting the file when done with it.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="tempfile.mkdtemp">
-<code class="descclassname">tempfile.</code><code class="descname">mkdtemp</code><span class="sig-paren">(</span><em>suffix=''</em>, <em>prefix='tmp'</em>, <em>dir=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#mkdtemp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tempfile.mkdtemp" title="Permalink to this definition">¶</a></dt>
-<dd><p>User-callable function to create and return a unique temporary
-directory.  The return value is the pathname of the directory.</p>
-<p>Arguments are as for mkstemp, except that the &#8216;text&#8217; argument is
-not accepted.</p>
-<p>The directory is readable, writable, and searchable only by the
-creating user.</p>
-<p>Caller is responsible for deleting the directory when done with it.</p>
-</dd></dl>
-
-<dl class="function">
+<dl class="py function">
 <dt id="tempfile.mktemp">
-<code class="descclassname">tempfile.</code><code class="descname">mktemp</code><span class="sig-paren">(</span><em>suffix=''</em>, <em>prefix='tmp'</em>, <em>dir=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#mktemp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tempfile.mktemp" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">tempfile.</span></code><code class="sig-name descname"><span class="pre">mktemp</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'tmp'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#mktemp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tempfile.mktemp" title="Permalink to this definition">¶</a></dt>
 <dd><p>User-callable function to return a unique temporary file name.  The
 file is not created.</p>
-<p>Arguments are as for mkstemp, except that the &#8216;text&#8217; argument is
-not accepted.</p>
-<p>This function is unsafe and should not be used.  The file name
-refers to a file that did not exist at some point, but by the time
+<p>Arguments are similar to mkstemp, except that the ‘text’ argument is
+not accepted, and suffix=None, prefix=None and bytes file names are not
+supported.</p>
+<p>THIS FUNCTION IS UNSAFE AND SHOULD NOT BE USED.  The file name may
+refer to a file that did not exist at some point, but by the time
 you get around to creating it, someone else may have beaten you to
 the punch.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="tempfile.gettempprefix">
-<code class="descclassname">tempfile.</code><code class="descname">gettempprefix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#gettempprefix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tempfile.gettempprefix" title="Permalink to this definition">¶</a></dt>
-<dd><p>Accessor for tempdir.template.</p>
-</dd></dl>
-
-<dl class="function">
-<dt id="tempfile.gettempdir">
-<code class="descclassname">tempfile.</code><code class="descname">gettempdir</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tempfile.html#gettempdir"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tempfile.gettempdir" title="Permalink to this definition">¶</a></dt>
-<dd><p>Accessor for tempfile.tempdir.</p>
-</dd></dl>
-
 </div>
 </div>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
@@ -230,22 +246,22 @@ the punch.</p>
     
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
     </form>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script><h3><a href="../index.html">Table Of Contents</a></h3>
+<script>$('#searchbox').show(0);</script><h3><a href="../index.html">Table Of Contents</a></h3>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../readme.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Reference</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="foo.bar.html"><code class="docutils literal"><span class="pre">foo.bar</span></code> &#8212; Boring lorem ipsum</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="docutils literal"><span class="pre">foobar</span></code> &#8212; Boring lorem ipsum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foo.bar.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">foo.bar</span></code> — Boring lorem ipsum</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">foobar</span></code> — Boring lorem ipsum</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
@@ -284,8 +300,8 @@ the punch.</p>
 
     <div class="footer" role="contentinfo">
         &#169; Copyright 2014-2015, Ionel Cristian Mărieș.
-      Last updated on Dec 17, 2016.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.1.
+      Last updated on May 04, 2021.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.4.
     </div>
   </body>
 </html>
